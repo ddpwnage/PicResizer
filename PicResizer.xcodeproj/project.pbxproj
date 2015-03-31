@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25D510BC1A72105E00C9D2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D510BB1A72105E00C9D2B4 /* main.m */; };
-		25D510BF1A72105E00C9D2B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D510BE1A72105E00C9D2B4 /* AppDelegate.m */; };
-		25D510C21A72105E00C9D2B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D510C11A72105E00C9D2B4 /* ViewController.m */; };
-		25D510C51A72105E00C9D2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D510C31A72105E00C9D2B4 /* Main.storyboard */; };
-		25D510C71A72105E00C9D2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D510C61A72105E00C9D2B4 /* Images.xcassets */; };
-		25D510CA1A72105E00C9D2B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D510C81A72105E00C9D2B4 /* LaunchScreen.xib */; };
+		25A1CD071AC9145400FE2EED /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A1CD061AC9145400FE2EED /* SceneKit.framework */; };
 		25D510D61A72105E00C9D2B4 /* PicResizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D510D51A72105E00C9D2B4 /* PicResizerTests.m */; };
+		25D865101ACA87DF009756FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D864FE1ACA87DF009756FD /* AppDelegate.m */; };
+		25D865111ACA87DF009756FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D864FF1ACA87DF009756FD /* LaunchScreen.xib */; };
+		25D865121ACA87DF009756FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D865011ACA87DF009756FD /* Main.storyboard */; };
+		25D865131ACA87DF009756FD /* bgImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25D865031ACA87DF009756FD /* bgImg.jpg */; };
+		25D865141ACA87DF009756FD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D865041ACA87DF009756FD /* Icon.png */; };
+		25D865151ACA87DF009756FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D865051ACA87DF009756FD /* Images.xcassets */; };
+		25D865161ACA87DF009756FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25D865061ACA87DF009756FD /* Info.plist */; };
+		25D865171ACA87DF009756FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D865071ACA87DF009756FD /* main.m */; };
+		25D865181ACA87DF009756FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D865091ACA87DF009756FD /* ViewController.m */; };
+		25D865191ACA87DF009756FD /* picturePreviewScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D8650B1ACA87DF009756FD /* picturePreviewScene.m */; };
+		25D8651A1ACA87DF009756FD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D8650C1ACA87DF009756FD /* MainViewController.m */; };
+		25D8651B1ACA87DF009756FD /* picturePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D8650F1ACA87DF009756FD /* picturePreview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +34,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25A1CD061AC9145400FE2EED /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		25D510B61A72105E00C9D2B4 /* PicResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25D510BA1A72105E00C9D2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25D510BB1A72105E00C9D2B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		25D510BD1A72105E00C9D2B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		25D510BE1A72105E00C9D2B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		25D510C01A72105E00C9D2B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25D510C11A72105E00C9D2B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		25D510C41A72105E00C9D2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		25D510C61A72105E00C9D2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		25D510C91A72105E00C9D2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		25D510CF1A72105E00C9D2B4 /* PicResizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicResizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D510D41A72105E00C9D2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D510D51A72105E00C9D2B4 /* PicResizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicResizerTests.m; sourceTree = "<group>"; };
+		25D864FD1ACA87DF009756FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25D864FE1ACA87DF009756FD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25D865001ACA87DF009756FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		25D865021ACA87DF009756FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25D865031ACA87DF009756FD /* bgImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgImg.jpg; sourceTree = "<group>"; };
+		25D865041ACA87DF009756FD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		25D865051ACA87DF009756FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25D865061ACA87DF009756FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25D865071ACA87DF009756FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25D865081ACA87DF009756FD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		25D865091ACA87DF009756FD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25D8650A1ACA87DF009756FD /* picturePreviewScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = picturePreviewScene.h; sourceTree = "<group>"; };
+		25D8650B1ACA87DF009756FD /* picturePreviewScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = picturePreviewScene.m; sourceTree = "<group>"; };
+		25D8650C1ACA87DF009756FD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		25D8650D1ACA87DF009756FD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		25D8650E1ACA87DF009756FD /* picturePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = picturePreview.h; sourceTree = "<group>"; };
+		25D8650F1ACA87DF009756FD /* picturePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = picturePreview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A1CD071AC9145400FE2EED /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +80,8 @@
 		25D510AD1A72105E00C9D2B4 = {
 			isa = PBXGroup;
 			children = (
-				25D510B81A72105E00C9D2B4 /* PicResizer */,
+				25D864FC1ACA87DF009756FD /* PicResizer */,
+				25A1CD061AC9145400FE2EED /* SceneKit.framework */,
 				25D510D21A72105E00C9D2B4 /* PicResizerTests */,
 				25D510B71A72105E00C9D2B4 /* Products */,
 			);
@@ -76,30 +94,6 @@
 				25D510CF1A72105E00C9D2B4 /* PicResizerTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		25D510B81A72105E00C9D2B4 /* PicResizer */ = {
-			isa = PBXGroup;
-			children = (
-				25D510BD1A72105E00C9D2B4 /* AppDelegate.h */,
-				25D510BE1A72105E00C9D2B4 /* AppDelegate.m */,
-				25D510C01A72105E00C9D2B4 /* ViewController.h */,
-				25D510C11A72105E00C9D2B4 /* ViewController.m */,
-				25D510C31A72105E00C9D2B4 /* Main.storyboard */,
-				25D510C61A72105E00C9D2B4 /* Images.xcassets */,
-				25D510C81A72105E00C9D2B4 /* LaunchScreen.xib */,
-				25D510B91A72105E00C9D2B4 /* Supporting Files */,
-			);
-			path = PicResizer;
-			sourceTree = "<group>";
-		};
-		25D510B91A72105E00C9D2B4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				25D510BA1A72105E00C9D2B4 /* Info.plist */,
-				25D510BB1A72105E00C9D2B4 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		25D510D21A72105E00C9D2B4 /* PicResizerTests */ = {
@@ -117,6 +111,30 @@
 				25D510D41A72105E00C9D2B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25D864FC1ACA87DF009756FD /* PicResizer */ = {
+			isa = PBXGroup;
+			children = (
+				25D864FD1ACA87DF009756FD /* AppDelegate.h */,
+				25D864FE1ACA87DF009756FD /* AppDelegate.m */,
+				25D864FF1ACA87DF009756FD /* LaunchScreen.xib */,
+				25D865011ACA87DF009756FD /* Main.storyboard */,
+				25D865031ACA87DF009756FD /* bgImg.jpg */,
+				25D865041ACA87DF009756FD /* Icon.png */,
+				25D865051ACA87DF009756FD /* Images.xcassets */,
+				25D865061ACA87DF009756FD /* Info.plist */,
+				25D865071ACA87DF009756FD /* main.m */,
+				25D865081ACA87DF009756FD /* ViewController.h */,
+				25D865091ACA87DF009756FD /* ViewController.m */,
+				25D8650A1ACA87DF009756FD /* picturePreviewScene.h */,
+				25D8650B1ACA87DF009756FD /* picturePreviewScene.m */,
+				25D8650C1ACA87DF009756FD /* MainViewController.m */,
+				25D8650D1ACA87DF009756FD /* MainViewController.h */,
+				25D8650E1ACA87DF009756FD /* picturePreview.h */,
+				25D8650F1ACA87DF009756FD /* picturePreview.m */,
+			);
+			path = PicResizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +217,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D510C51A72105E00C9D2B4 /* Main.storyboard in Resources */,
-				25D510CA1A72105E00C9D2B4 /* LaunchScreen.xib in Resources */,
-				25D510C71A72105E00C9D2B4 /* Images.xcassets in Resources */,
+				25D865151ACA87DF009756FD /* Images.xcassets in Resources */,
+				25D865111ACA87DF009756FD /* LaunchScreen.xib in Resources */,
+				25D865121ACA87DF009756FD /* Main.storyboard in Resources */,
+				25D865141ACA87DF009756FD /* Icon.png in Resources */,
+				25D865131ACA87DF009756FD /* bgImg.jpg in Resources */,
+				25D865161ACA87DF009756FD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D510C21A72105E00C9D2B4 /* ViewController.m in Sources */,
-				25D510BF1A72105E00C9D2B4 /* AppDelegate.m in Sources */,
-				25D510BC1A72105E00C9D2B4 /* main.m in Sources */,
+				25D8651B1ACA87DF009756FD /* picturePreview.m in Sources */,
+				25D865191ACA87DF009756FD /* picturePreviewScene.m in Sources */,
+				25D8651A1ACA87DF009756FD /* MainViewController.m in Sources */,
+				25D865181ACA87DF009756FD /* ViewController.m in Sources */,
+				25D865101ACA87DF009756FD /* AppDelegate.m in Sources */,
+				25D865171ACA87DF009756FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +268,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		25D510C31A72105E00C9D2B4 /* Main.storyboard */ = {
+		25D864FF1ACA87DF009756FD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				25D510C41A72105E00C9D2B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		25D510C81A72105E00C9D2B4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25D510C91A72105E00C9D2B4 /* Base */,
+				25D865001ACA87DF009756FD /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		25D865011ACA87DF009756FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25D865021ACA87DF009756FD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,7 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PicResizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +379,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PicResizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +440,7 @@
 				25D510DB1A72105E00C9D2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25D510DC1A72105E00C9D2B4 /* Build configuration list for PBXNativeTarget "PicResizerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				25D510DE1A72105E00C9D2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

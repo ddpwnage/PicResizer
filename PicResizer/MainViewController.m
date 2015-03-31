@@ -1,23 +1,36 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  PicResizer
 //
-//  Created by Danny Dalton on 1/23/15.
+//  Created by Danny Dalton on 3/30/15.
 //  Copyright (c) 2015 Dannydalton.com. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "MainViewController.h"
+#import "picturePreview.h"
 
-@interface ViewController ()
+@implementation MainViewController {
+    NSMutableArray *listOfPictures;
+    IBOutlet UILabel *amntPicturesSelected;
+}
 
-@end
 
-@implementation ViewController
+-(void)viewWillAppear:(BOOL)animated {
+    listOfPictures = [NSMutableArray arrayWithObjects:_imageSentIn, nil];
+    amntPicturesSelected.text = @"1 picture selected";
+}
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *chosenImage = info[UIImagePickerControllerOriginalImage];
+    [listOfPictures addObject:chosenImage];
+    amntPicturesSelected.text = [NSString stringWithFormat:@"%lu pictures selected", (unsigned long)listOfPictures.count+1];
+    // add it to the image preview
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (BOOL)checkForStillCapability {
@@ -37,22 +50,6 @@
     return FALSE;
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    [picker dismissViewControllerAnimated:YES completion:^{
-        UIImage *chosenImage = info[UIImagePickerControllerOriginalImage];
-        
-        MainViewController *mainViewController;
-        [mainViewController setValue:chosenImage forKey:@"imageSentIn"];
-        
-        [self performSegueWithIdentifier:@"goToMain" sender:self];
-    }];
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-}
-
 - (IBAction)cameraOrPicker:(UIButton *)sender {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Picture source" message:@"Where do you want to choose a picture from?" preferredStyle:UIAlertControllerStyleActionSheet];
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
@@ -62,8 +59,8 @@
             picker.delegate = self;
             picker.sourceType = UIImagePickerControllerSourceTypeCamera;
             [self presentViewController:picker animated:YES completion:nil];
-            [alertController addAction:takePic];
         }];
+        [alertController addAction:takePic];
     }
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         UIAlertAction *choosePic = [UIAlertAction actionWithTitle:@"Use the photo gallery" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action){
@@ -75,11 +72,6 @@
         [alertController addAction:choosePic];
     }
     [self presentViewController:alertController animated:YES completion:nil];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
